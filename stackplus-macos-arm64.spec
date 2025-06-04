@@ -39,7 +39,7 @@ exe = EXE(
 )
 app = BUNDLE(
     exe,
-    name='stackplus.app',
+    name='Stack Plus.app',
     icon='icon.icns',
     bundle_identifier=None,
 )
