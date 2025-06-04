@@ -21,7 +21,7 @@ from utils import unifiedPath
 # preloads the GLFW library
 if hasattr(sys, '_MEIPASS'):
     if system() == "Windows": # windows
-        libglfwPath = unifiedPath("glfw3.dll")
+        libglfwPath = unifiedPath("glfw3/glfw3.dll") # add to subfolder
     elif system() == "Darwin": # macOS
         libglfwPath = unifiedPath("libglfw.3.dylib")
     ctypes.CDLL(str(libglfwPath))
