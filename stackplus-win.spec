@@ -4,7 +4,7 @@
 a = Analysis(
     ['stackplus.py'],
     pathex=[],
-    binaries=[(r'C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\glfw\glfw3.dll', '.')],
+    binaries=[('C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\glfw\\glfw3.dll', '.\\glfw3\\glfw3.dll')],
     datas=[('res', 'res')],
     hiddenimports=[],
     hookspath=[],
@@ -35,11 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['icon.icns'],
-)
-app = BUNDLE(
-    exe,
-    name='Stack Plus.exe',
-    icon='icon.ico',
-    bundle_identifier=None,
+    icon=['icon.ico'],
 )
