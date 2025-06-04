@@ -4,7 +4,7 @@
 a = Analysis(
     ['stackplus.py'],
     pathex=[],
-    binaries=[('/Users/brandonnamgoong/Library/Python/3.13/lib/python/site-packages/glfw/libglfw.3.dylib', '.')],
+    binaries=[(r'C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\glfw\glfw3.dll', '.')],
     datas=[('res', 'res')],
     hiddenimports=[],
     hookspath=[],
