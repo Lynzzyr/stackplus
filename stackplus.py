@@ -5,6 +5,7 @@
 from pathlib import Path
 from random import randint
 from math import floor
+from platform import system
 import pygame
 
 import utils, polygons, render
@@ -1222,6 +1223,10 @@ pygame.init()
 # define pygame things
 screen: pygame.Surface = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Stack+")
+if system() == "Darwin":
+    pygame.display.set_icon(
+        pygame.image.load(utils.unifiedPath("res/icon_macos.png"))
+    )
 clock = pygame.Clock()
 
 # show loading screen
