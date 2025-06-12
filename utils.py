@@ -12,7 +12,7 @@ import sys
 # constants
 #-----------------------------------------------------------------------------
 
-versionString: str   = "VERSION 1.0" # string to display on corner for version
+versionString: str   = "VERSION 1.1" # string to display on corner for version
 
 # colors
 uiColors: dict       = {

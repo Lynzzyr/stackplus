@@ -11,20 +11,7 @@ Some code has been adapted from kickstart ideas from GPT 4o. (OpenGL is horrifyi
 
 from OpenGL.GL import *
 from OpenGL.GLU import *
-from platform import system
 import numpy as np
-import ctypes
-import sys
-
-from utils import unifiedPath
-
-# preloads the GLFW library
-if hasattr(sys, '_MEIPASS'):
-    if system() == "Windows": # windows
-        libglfwPath = unifiedPath("glfw3.dll")
-    elif system() == "Darwin": # macOS
-        libglfwPath = unifiedPath("libglfw.3.dylib")
-    ctypes.CDLL(str(libglfwPath))
 import glfw
 
 #-----------------------------------------------------------------------------
